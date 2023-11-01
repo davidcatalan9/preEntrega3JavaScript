@@ -1,23 +1,15 @@
-class Usuario { 
-    constructor(
-    nombre,
-    apellido,
-    canReloj,
-    totalReloj,
-    email,
-    usuario,
-    clave
-    ){
-    this.nombre = nombre;
-    this.apellido= apellido;
-    this.canReloj = canReloj;
-    this.totalReloj = totalReloj;
-    this.email= email;
-    this.usuario = usuario;
-    this.clave=clave;
-}
+class User {
+    constructor(userName, password) {
+        this.userName = userName;
+        this.password = password;
+        this.isLogged = false;
+    }
 
-toString =()=>{
-    return this.usuario +":" + this.usuario + " " + this.email ;
-};
+    toString = () => {
+        return this.userName;
+    }
+
+    isPassword = (password = '') => {
+        return this.password === password;
+    }
 }

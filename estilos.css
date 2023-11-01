@@ -54,6 +54,6 @@ body {
   /* Estilo personalizado para el tamaño del texto del menú */
 .navbar-nav.navbar-nav-lg .nav-link {
     font-size: 2rem; 
-    color: blue;
+    color: green;
 }
 

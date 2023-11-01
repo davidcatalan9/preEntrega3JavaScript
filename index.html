@@ -21,77 +21,91 @@
       <h1>Venta de relojes de pulsera</h1>
       <p>Encuentra el reloj perfecto para ti</p>
       <div>
-        
+
         <!-- Navbar de Bootstrap -->
-        <nav class="navbar navbar-expand-lg navbar-light bg-light" >
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
           <!-- <a class="navbar-brand" href="#">Navegación</a> -->
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
-          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav navbar-nav-lg">
-            <li class="nav-item active">
-              <a class="nav-link" href="#">Inicio</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Productos</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Login</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Registro</a>
-            </li>
-          </ul>
-        </div>
-      </nav>
-    </div>
-  </header>
-  <h3 class="azul">PreEntrega3 - David Catalan </h3>
-    
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav navbar-nav-lg">
+              <li class="nav-item active">
+                <a class="nav-link" href="#">Inicio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Productos</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./paginas/login.html">Login</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./paginas/registrar.html">Registrar</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <h3 class="azul">PreEntrega3 - David Catalan (c) 2023 </h3>
+
     <div>
 
       <!-- Galería de imágenes -->
       <section id="galeria">
         <h2>Galería de relojes</h2>
-        <div class="relojes">
-          <!-- Imagen 1 -->
-          <div class="reloj">
-            <img src="imagenes/reloj-1.jpg" class="tamReloj">
-            <h3>Reloj de pulsera analógico</h3>
-            <p>Un elegante reloj analógico para cualquier ocasión</p>
-          </div>
+        <ul id="productos-container">
 
-          <!-- Imagen 2 -->
-          <div class="reloj">
-            <img src="imagenes/reloj-2.jpg" class="tamReloj">
-            <h3>Reloj de pulsera digital</h3>
-            <p>Un práctico reloj digital para el día a día</p>
-          </div>
+          <div class="relojes">
+            <!-- Imagen 1 -->
+            <div class="reloj">
 
-          <!-- Imagen 3 -->
-          <div class="reloj">
-            <img src="imagenes/reloj-3.jpg" class="tamReloj">
-            <h3>Reloj de pulsera inteligente</h3>
-            <p>Un reloj inteligente con todas las funciones</p>
-          </div>
+              <img src="imagenes/reloj-1.jpg" class="tamReloj">
+              <h4>Reloj de pulsera analógico</h4>
+              <p>Un elegante reloj analógico para cualquier ocasión</p>
+              <p>$15.000</p>
+              <button type="button" class="addButton">Agregar</button>
+            </div>
 
-          <!-- Imagen 4 -->
-          <div class="reloj">
-            <img src="imagenes/reloj-4.jpg" class="tamReloj">
-            <h3>Reloj de pulsera vintage</h3>
-            <p>Un reloj de pulsera con un toque retro</p>
-          </div>
+            <!-- Imagen 2 -->
+            <div class="reloj">
+              <img src="imagenes/reloj-2.jpg" class="tamReloj">
+              <h4>Reloj de pulsera digital</h4>
+              <p>Un práctico reloj digital para el día a día</p>
+              <p>$25.000</p>
+              <button type="button" class="addButton">Agregar</button>
+            </div>
 
-          <!-- Imagen 5 -->
-          <div class="reloj">
-            <img src="imagenes/reloj-5.jpg" class="tamReloj">
-            <h3>Reloj de pulsera deportivo</h3>
-            <p>Un reloj de pulsera resistente para el uso diario</p>
-          </div>
-        </div>
-      </section>
+            <!-- Imagen 3 -->
+            <div class="reloj">
+              <img src="imagenes/reloj-3.jpg" class="tamReloj">
+              <h4>Reloj de pulsera inteligente</h4>
+              <p>Un reloj inteligente con todas las funciones</p>
+              <p>$32.000</p>
+              <button type="button" class="addButton">Agregar</button>
+            </div>
+
+            <!-- Imagen 4 -->
+            <div class="reloj">
+              <img src="imagenes/reloj-4.jpg" class="tamReloj">
+              <h4>Reloj de pulsera vintage</h4>
+              <p>Un reloj de pulsera con un toque retro</p>
+              <p>$95.000</p>
+              <button type="button" class="addButton">Agregar</button>
+            </div>
+
+            <!-- Imagen 5 -->
+            <div class="reloj">
+              <img src="imagenes/reloj-5.jpg" class="tamReloj">
+              <h4>Reloj de pulsera deportivo</h4>
+              <p>Un reloj de pulsera resistente para el uso diario</p>
+              <p>$15.000</p>
+              <button type="button" class="addButton">Agregar</button>
+            </div>
+        </ul>
+    </div>
+    </section>
     </div>
 
 
@@ -104,9 +118,9 @@
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 
-    <script src="./mocks/usuarios.js"></script>
-    <script src="./Clases/usuario.js"></script>
-    <script src="./script.js"></script>
+    <script src="./Clases/usuarios.js"></script>
+    <script src="./scripts/index.js"></script>
+    <script src="./scripts/main.js"></script>
 
   </body>
 
