@@ -6,6 +6,7 @@ class User {
     }
 
     toString = () => {
+        console.log(this.userName);
         return this.userName;
     }
 

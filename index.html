@@ -38,6 +38,9 @@
                 <a class="nav-link" href="#">Productos</a>
               </li>
               <li class="nav-item">
+                <a class="nav-link" href="#section-carrito">Carro</a>
+              </li>
+              <li class="nav-item">
                 <a class="nav-link" href="./paginas/login.html">Login</a>
               </li>
               <li class="nav-item">
@@ -106,6 +109,23 @@
         </ul>
     </div>
     </section>
+    <section>
+      <h3 id="section-carrito">Carrito</h3>
+      <hr>
+      <div id="cart">
+          <div class="resumen-compra">
+              <h4>Resumen de compra</h4>
+              <hr>
+              <p>Total: $<strong id="totalPrice">0</strong></p>
+              <hr>
+              <button type="button">Comprar</button>
+          </div>
+          <div id="cart-products">
+
+          </div>
+      </div>
+  </section>
+
     </div>
 
 
@@ -119,7 +139,7 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 
     <script src="./Clases/usuarios.js"></script>
-    <script src="./scripts/index.js"></script>
+    <script src="./constants/index.js"></script>
     <script src="./scripts/main.js"></script>
 
   </body>

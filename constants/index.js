@@ -8,6 +8,7 @@ const recoverStorageList = () => {
     const recoverUsers = JSON.parse(localStorage.getItem(LOCAL_STORAGE_USERNAME));
     if (recoverUsers) {
         return recoverUsers.map((e) => {
+            console.log(recoverUsers)
             return new User(e.userName, e.password);
         });
     }
@@ -30,7 +31,7 @@ const registrarLogin = (unUsuario) => {
 }
 
 const recoverLoggedUser = () => {
-    return JSON.parse(sessionStorage.getItem(USER_LOGGED_KEY)) || false;
+        return JSON.parse(sessionStorage.getItem(USER_LOGGED_KEY)) || false;
 }
 
 const USER_LOGGED = recoverLoggedUser();

@@ -7,6 +7,7 @@ const totalPrice = document.getElementById('totalPrice');
 const productsList = document.getElementById('productos-container');
 productsList.addEventListener('click', (e) => {
   if (e.target.classList.contains('addButton')) {
+    console.log("carro")
     if (!isUserLogged()) {
       window.location.href = './pages/login.html';
       return;
